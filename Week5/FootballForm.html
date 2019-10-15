@@ -83,7 +83,10 @@
 <input type="radio" name="year" value="Apprenticeship">Apprenticeship
 <br>
 <label for="SEmail">Email</label>
-<input type="email" name="SEmail" class="form-control" >
+<input type="email" name="SEmail" class="form-control" placeholder="name@example.com" aria-describedby="ShareEmail">
+<small id="shareEmail" class="form-text text-muted">
+We will never share your email to any 3rd parties
+</small>
         
 <br><br>
 <h3>Team Info</h3>
@@ -114,7 +117,7 @@
     </div>
   </div>
         <br><br>
-        <input type="checkbox" name="TnC" value="TnC"> I agree to the Terms and Conditions<br>
+        <input type="checkbox" name="TnC" value="TnC" required> I agree to the Terms and Conditions<br>
         <input type="submit" value="Submit" class="btn btn-primary">
         <br><br>
          <input type="checkbox" name="phone" value="phone"> I wish to recieve texts regarding Sligo IT Football club<br>
