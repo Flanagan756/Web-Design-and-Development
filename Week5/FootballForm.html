@@ -62,7 +62,7 @@ input[type="radio"]{
         <br><br>
     <form name="footballReg" action="" method="get">
     <label for="FName">First Name</label>
-      <input type="text" id="FName" name="FirstName" class="form-control" placeholder="First name" size="30" >
+      <input type="text" id="FName" name="FirstName" title="FirstName can be 15 characters max" placeholder="First Name can be 15 characters max" class="form-control" pattern="[a-zA-Z]{0,15}" placeholder="First name" required>
       <br><br>
          <label for="LName">Last Name</label>
       <input type="text" name="LastName" class="form-control" placeholder="Last name" >  
@@ -77,7 +77,7 @@ input[type="radio"]{
         <h3>Student Information</h3>
         <br><br>
         <label for="getSID">Student ID</label>
-        <input type="text" id="getSID" name="StudentID" class="form-control" class="col-sm-3 my-1">
+        <input type="text" id="getSID" name="StudentID" class="form-control" class="col-sm-3 my-1" title="Must begin with S and be a totla of 9 characters long eg. S00189675" placeholder="Must begin with S and be 9 Characters long" pattern="(S)[0-9]{8}" required>
         <br>
         <label for="getCourseName">Course</label>
         <input type="text" id="getCourseName" name="CourseName" class="form-control">
